@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import { BASE_URL } from './constants';
 import RootLayout from './layouts/RootLayout';
+import SingleTask from './pages/SingleTask';
 
 function App() {
 	return (
@@ -19,7 +20,7 @@ function App() {
 						/>
 						<Route
 							path=':id'
-							element={<h1>single task page</h1>}
+							element={<SingleTask />}
 						/>
 					</Route>
 				</Route>
