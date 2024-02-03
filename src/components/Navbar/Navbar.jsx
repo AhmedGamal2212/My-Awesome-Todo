@@ -21,13 +21,12 @@ const Navbar = () => {
 							<span className='icon'>
 								<FontAwesomeIcon
 									icon={faCircleCheck}
-                                    size="lg"
-                                    className="pr-1 pt-1"
+									size='lg'
+									className='pr-1 pt-1'
+									shake
 								/>
 							</span>
-							<span className='subtitle has-text-white'>
-								My Awesome Todo
-							</span>
+							<span className='subtitle has-text-white'>My Awesome Todo</span>
 						</span>
 					</Link>
 
