@@ -4,9 +4,9 @@ import QuoteContainer from '../../components/Quote/QuoteContainer';
 
 const Home = () => {
     return (
-        <>
+        <div className='is-fh'>
             <QuoteContainer useQuote={useRandomInspirationalQuote} />
-        </>
+        </div>
     );
 };
 
