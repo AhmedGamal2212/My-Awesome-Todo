@@ -9,6 +9,7 @@ body {
     height: 100vh;
 }
 
-#root, .is-fh {
-    height: 100%;
+#root,
+.is-fh {
+    height: 100vh;
 }

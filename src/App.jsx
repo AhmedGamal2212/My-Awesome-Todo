@@ -9,7 +9,7 @@ function App() {
     return (
         <div
             data-testid='app'
-            className='is-fh'
+            className='is-fh has-background-black-bis'
         >
             <Routes>
                 <Route
