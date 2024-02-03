@@ -6,7 +6,7 @@ import SingleTask from './pages/SingleTask';
 
 function App() {
     return (
-        <>
+        <div data-testid='app'>
             <Routes>
                 <Route
                     path={`${BASE_URL}`}
@@ -28,7 +28,7 @@ function App() {
                     </Route>
                 </Route>
             </Routes>
-        </>
+        </div>
     );
 }
 
