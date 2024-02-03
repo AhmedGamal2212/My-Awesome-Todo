@@ -6,8 +6,8 @@ const Quote = ({ quoteDetails }) => {
         <div className='container mt-4 p-3 is-fluid'>
             <div class='box p-1'>
                 <div className='has-text-weight-bold notification is-success has-text-centered'>
-                    <span className='is-size-5-desktop is-block'>"{`${quote}`}"</span>
-                    <span className='is-size-5 is-italic'>- {`${author}`}</span>
+                    <span className='is-size-5-desktop is-size-6-mobile is-block'>"{`${quote}`}"</span>
+                    <span className='is-size-6-desktop is-size-7-mobile is-italic'>- {`${author}`}</span>
                 </div>
             </div>
         </div>
