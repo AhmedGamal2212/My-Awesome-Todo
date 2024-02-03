@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { secondsToMilliseconds } from '../../utilities';
-import { INITIAL_INSPIRATIONAL_QUOTE } from '../../constants';
+import { INITIAL_INSPIRATIONAL_QUOTE, QUOTES_VIEW_TIME_IN_SECONDS } from '../../constants';
 import Quote from './Quote';
 
 const QuoteContainer = ({ useQuote }) => {
@@ -10,7 +10,7 @@ const QuoteContainer = ({ useQuote }) => {
         const intervalId = setInterval(() => {
             const newQuote = useQuote();
             setQuote(newQuote);
-        }, secondsToMilliseconds(5));
+        }, secondsToMilliseconds(QUOTES_VIEW_TIME_IN_SECONDS));
         return () => clearInterval(intervalId);
     }, []);
 
