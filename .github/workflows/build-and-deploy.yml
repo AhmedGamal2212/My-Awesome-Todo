@@ -27,7 +27,7 @@ jobs:
         git config --global user.name "ahmedgamal2212"
         git config --global user.email "ahmedgemy2212@gmail.com"
         git config --global credential.helper store
-        git config --global user.password "${{ secrets.GH_PAGES_DEPLOYMENT_TOKEN  }}"
+        git config --global user.password "${{ secrets.PAGES_DEPLOYMENT_TOKEN  }}"
 
     - name: Install dependencies
       run: |
