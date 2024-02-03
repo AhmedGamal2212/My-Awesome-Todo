@@ -1,4 +1,4 @@
-import { screen, render, fireEvent } from '@testing-library/react';
+import { screen, render } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import Navbar from '../components/Navbar';
 import { StaticRouter } from 'react-router-dom/server';
