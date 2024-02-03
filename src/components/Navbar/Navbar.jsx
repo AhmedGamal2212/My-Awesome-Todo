@@ -22,7 +22,7 @@ const Navbar = () => {
                                 <FontAwesomeIcon
                                     icon={faCircleCheck}
                                     size='lg'
-                                    className='pr-1 pt-1'
+                                    className='pr-1 pt-1 has-text-primary'
                                     shake
                                 />
                             </span>
