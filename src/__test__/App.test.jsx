@@ -3,7 +3,7 @@ import { beforeAll, describe, it, expect } from 'vitest';
 import App from '../App'
 import { BrowserRouter } from 'react-router-dom';
 
-describe('app component', () => {
+describe('App Component', () => {
     beforeAll(() => {
         render(
             <BrowserRouter>
