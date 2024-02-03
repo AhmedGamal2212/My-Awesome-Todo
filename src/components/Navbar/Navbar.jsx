@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BASE_URL } from '../../constants';
+import { BASE_URL, APP_TITLE } from '../../constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
 
@@ -27,7 +27,7 @@ const Navbar = () => {
                                 />
                             </span>
                             <span className='subtitle has-text-white'>
-                                My Awesome Todo
+                                {`${APP_TITLE}`}
                             </span>
                         </span>
                     </Link>

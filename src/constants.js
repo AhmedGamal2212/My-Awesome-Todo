@@ -4,3 +4,4 @@ export const INITIAL_INSPIRATIONAL_QUOTE = {
     author: 'Copilot',
     source: 'Bing AI',
 };
+export const APP_TITLE = 'My Awesome Todo';
