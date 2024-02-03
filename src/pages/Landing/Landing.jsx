@@ -6,8 +6,8 @@ const Landing = () => {
     return (
         // dummy buttons
         <div className='buttons' style={{
-            marginTop: '40%',
-            marginLeft: '30%'
+            marginTop: '10%',
+            marginLeft: '20%'
         }}>
             <Link
                 className='button is-primary'
