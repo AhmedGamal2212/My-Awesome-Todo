@@ -7,7 +7,10 @@ import Landing from './pages/Landing';
 
 function App() {
     return (
-        <div data-testid='app'>
+        <div
+            data-testid='app'
+            className='is-fh'
+        >
             <Routes>
                 <Route
                     path={`${BASE_URL}`}
