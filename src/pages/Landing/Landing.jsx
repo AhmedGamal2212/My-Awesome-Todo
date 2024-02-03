@@ -1,0 +1,28 @@
+import React from 'react';
+import { BASE_URL } from '../../constants';
+import { Link } from 'react-router-dom';
+
+const Landing = () => {
+    return (
+        // dummy buttons
+        <div className='buttons' style={{
+            marginTop: '40%',
+            marginLeft: '30%'
+        }}>
+            <Link
+                className='button is-primary'
+                to={`${BASE_URL}/tasks`}
+            >
+                Visit Home Page
+            </Link>
+            <Link
+                className='button is-danger'
+                to={`${BASE_URL}/tasks/1`}
+            >
+                Visit Single Task Page
+            </Link>
+        </div>
+    );
+};
+
+export default Landing;

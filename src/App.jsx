@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import { BASE_URL } from './constants';
 import RootLayout from './layouts/RootLayout';
 import SingleTask from './pages/SingleTask';
+import Landing from './pages/Landing';
 
 function App() {
     return (
@@ -14,7 +15,7 @@ function App() {
                 >
                     <Route
                         path=''
-                        element={<h1>landing page</h1>}
+                        element={<Landing />}
                     />
                     <Route path='tasks'>
                         <Route
