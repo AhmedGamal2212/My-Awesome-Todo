@@ -1,4 +1,4 @@
-export const BASE_URL = '/my-awesome-todo';
+export const BASE_URL = '/My-Awesome-Todo';
 export const INITIAL_INSPIRATIONAL_QUOTE = {
     quote: 'You are capable of amazing things. Start now. 🚀',
     author: 'Bing AI',
