@@ -1,4 +1,3 @@
-import { screen, render } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { secondsToMilliseconds } from '../utilities';
 
