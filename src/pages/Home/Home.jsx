@@ -3,6 +3,8 @@ import { useRandomInspirationalQuote } from '../../hooks/useRandomInspirationalQ
 import QuoteContainer from '../../components/Quote/QuoteContainer';
 import AddTaskForm from '../../components/AddTaskForm';
 import SplitScreen from '../../components/SplitScreen';
+import { useTasksContext } from '../../context/TasksContext';
+import RegularItemsListContainer from '../../components/RegularItemsList';
 
 const Home = () => {
     const leftPaneWidthInRatio = 3;
@@ -18,6 +20,7 @@ const Home = () => {
                 <div>left</div>
                 <div>right</div>
             </SplitScreen>
+            <RegularItemsListContainer useItemsData={useTasksContext} />
         </div>
     );
 };
