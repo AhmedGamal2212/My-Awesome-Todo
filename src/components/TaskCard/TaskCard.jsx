@@ -40,20 +40,32 @@ const TaskCard = ({ task }) => {
                         className={`icon ${status ? 'has-text-success' : ''}`}
                     >
                         {status ? (
-                            <FontAwesomeIcon icon={faCheckDouble} />
+                            <FontAwesomeIcon
+                                icon={faCheckDouble}
+                                data-testid='task-done-icon'
+                            />
                         ) : (
-                            <FontAwesomeIcon icon={faClipboardList} />
+                            <FontAwesomeIcon
+                                icon={faClipboardList}
+                                data-testid='pending-icon'
+                            />
                         )}
                     </span>
                 </div>
                 <div className='card-footer-item'>
                     <span className='icon'>
-                        <FontAwesomeIcon icon={faPen} />
+                        <FontAwesomeIcon
+                            icon={faPen}
+                            data-testid='edit-icon'
+                        />
                     </span>
                 </div>
                 <div className='card-footer-item'>
                     <span className='icon'>
-                        <FontAwesomeIcon icon={faTrash} />
+                        <FontAwesomeIcon
+                            icon={faTrash}
+                            data-testid='delete-icon'
+                        />
                     </span>
                 </div>
             </div>
