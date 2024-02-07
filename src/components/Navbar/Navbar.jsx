@@ -19,7 +19,7 @@ const Navbar = () => {
                 >
                     <Link
                         className='navbar-item'
-                        to={`${BASE_URL}`}
+                        to={`./`}
                         data-testid='navbar-brand-home-link'
                     >
                         <span className='icon-text'>

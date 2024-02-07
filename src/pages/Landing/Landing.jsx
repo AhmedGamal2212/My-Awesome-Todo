@@ -11,13 +11,13 @@ const Landing = () => {
         }}>
             <Link
                 className='button is-primary'
-                to={`${BASE_URL}/tasks`}
+                to={`./tasks`}
             >
                 Visit Home Page
             </Link>
             <Link
                 className='button is-danger'
-                to={`${BASE_URL}/tasks/1`}
+                to={`./tasks/1`}
             >
                 Visit Single Task Page
             </Link>

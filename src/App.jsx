@@ -13,14 +13,14 @@ function App() {
         >
             <Routes>
                 <Route
-                    path={`${BASE_URL}`}
+                    path={`${BASE_URL}/`}
                     element={<RootLayout />}
                 >
                     <Route
                         path=''
                         element={<Landing />}
                     />
-                    <Route path='tasks'>
+                    <Route path={`tasks`}>
                         <Route
                             path=''
                             element={<Home />}
