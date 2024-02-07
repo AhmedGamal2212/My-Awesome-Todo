@@ -5,3 +5,9 @@ export const INITIAL_INSPIRATIONAL_QUOTE = {
 };
 export const APP_TITLE = 'My Awesome Todo';
 export const QUOTES_VIEW_TIME_IN_SECONDS = 5;
+export const FILTERS_TEXT = ['filter1'];
+export const FILTERS_ACTIONS = [
+    () => {
+        console.log('filter applied');
+    },
+];

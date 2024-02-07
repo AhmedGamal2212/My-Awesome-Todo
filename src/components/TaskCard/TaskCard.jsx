@@ -5,13 +5,13 @@ import {
     faTrash,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import React from 'react';
+import style from './TaskCard.module.css';
 
 const TaskCard = ({ task }) => {
     const { title, description, priority, dueDate, status } = task;
     return (
-        <div className='card m-1 has-background-black-ter has-text-white p-1'>
+        <div className={`card m-1 has-background-black-ter has-text-white p-1 ${style.card}`}>
             <div className='card-content'>
                 <div className='media'>
                     <div className='media-content'>
