@@ -23,7 +23,7 @@ const Home = () => {
                 }}>
                     {Array(7)
                         .fill(0)
-                        .map((x) => (
+                        .map((x, idx) => (
                             <div
                                 style={{
                                     padding: '0.5rem',
@@ -31,6 +31,7 @@ const Home = () => {
                                     color: 'white',
                                     border: '1px solid #e1e1e1',
                                 }}
+                                key={idx}
                             >
                                 box box box box box{' '}
                             </div>
