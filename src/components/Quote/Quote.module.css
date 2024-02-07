@@ -1,0 +1,11 @@
+.mainContainer {
+    min-height: 10rem;
+    max-height: 10rem;
+}
+
+@media (max-width: 687px) {
+    .mainContainer {
+        min-height: 12rem;
+        max-height: 12rem;
+    }
+}
