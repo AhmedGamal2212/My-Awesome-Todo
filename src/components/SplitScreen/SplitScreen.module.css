@@ -1,0 +1,9 @@
+.right {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .right {
+        display: block !important;
+    }
+}

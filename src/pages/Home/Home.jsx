@@ -5,9 +5,10 @@ import AddTaskForm from '../../components/AddTaskForm';
 import SplitScreen from '../../components/SplitScreen';
 import { useTasksContext } from '../../context/TasksContext';
 import RegularItemsListContainer from '../../components/RegularItemsList';
+import TaskFilters from '../../components/TaskFilters';
 
 const Home = () => {
-    const leftPaneWidthInRatio = 2;
+    const leftPaneWidthInRatio = 3;
     const rightPaneWidthInRatio = 1;
     return (
         <div className='is-fh'>
@@ -18,25 +19,7 @@ const Home = () => {
                 rightWeight={rightPaneWidthInRatio}
             >
                 <RegularItemsListContainer useItemsData={useTasksContext} />
-                <div className='is-flex is-flex-wrap-wrap is-flex-direction-column' style={{
-                    minWidth: '300px'
-                }}>
-                    {Array(7)
-                        .fill(0)
-                        .map((x, idx) => (
-                            <div
-                                style={{
-                                    padding: '0.5rem',
-                                    margin: '0.5rem',
-                                    color: 'white',
-                                    border: '1px solid #e1e1e1',
-                                }}
-                                key={idx}
-                            >
-                                box box box box box{' '}
-                            </div>
-                        ))}
-                </div>
+                <TaskFilters />
             </SplitScreen>
         </div>
     );
