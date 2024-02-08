@@ -1,9 +1,3 @@
 .buttonsContainer {
-    padding: 1rem 0;
-}
-
-@media (min-width: 900px) {
-    .buttonsContainer {
-        padding: 1rem 2rem;
-    }
+    padding: 1rem 2rem;
 }
