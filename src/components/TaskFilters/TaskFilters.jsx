@@ -14,7 +14,7 @@ const TaskFilters = () => {
             />
         );
     }
-    return <div className={`buttons ${style.buttonsContainer}`}>{buttonsList}</div>;
+    return <div className={`buttons ${style.buttonsContainer} is-display-none`}>{buttonsList}</div>;
 };
 
 export default TaskFilters;
