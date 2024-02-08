@@ -18,7 +18,7 @@ const TaskCard = ({ task }) => {
                 <div className='media'>
                     <div className='media-content'>
                         <p className='title is-3'>{title}</p>
-                        <div className='is-flex'>
+                        <div className='is-flex is-align-items-baseline'>
                             <div
                                 className={`tag mr-4 ${
                                     priority === 'H'
