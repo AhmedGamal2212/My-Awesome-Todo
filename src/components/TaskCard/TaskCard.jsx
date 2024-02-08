@@ -11,7 +11,9 @@ import style from './TaskCard.module.css';
 const TaskCard = ({ task }) => {
     const { title, description, priority, dueDate, status } = task;
     return (
-        <div className={`card m-1 has-background-white-ter has-text-white p-1 ${style.card}`}>
+        <div
+            className={`card m-1 has-background-white-ter has-text-white p-1 ${style.card}`}
+        >
             <div className='card-content'>
                 <div className='media'>
                     <div className='media-content'>
@@ -32,12 +34,14 @@ const TaskCard = ({ task }) => {
                         </div>
                     </div>
                 </div>
-                <div className='content is-size-6 has-text-grey-dark'>{description}</div>
+                <div className='content is-size-6 has-text-grey-dark'>
+                    {description}
+                </div>
             </div>
             <div className='card-footer has-background-black-ter'>
                 <div className={`card-footer-item`}>
                     <span
-                        className={`icon ${status ? 'has-text-success' : ''}`}
+                        className={`icon ${status ? 'has-text-success' : ''} ${style.icon}`}
                     >
                         {status ? (
                             <FontAwesomeIcon
@@ -53,7 +57,7 @@ const TaskCard = ({ task }) => {
                     </span>
                 </div>
                 <div className='card-footer-item'>
-                    <span className='icon'>
+                    <span className={`icon ${style.icon}`}>
                         <FontAwesomeIcon
                             icon={faPen}
                             data-testid='edit-icon'
@@ -61,7 +65,7 @@ const TaskCard = ({ task }) => {
                     </span>
                 </div>
                 <div className='card-footer-item'>
-                    <span className='icon'>
+                    <span className={`icon ${style.icon}`}>
                         <FontAwesomeIcon
                             icon={faTrash}
                             data-testid='delete-icon'

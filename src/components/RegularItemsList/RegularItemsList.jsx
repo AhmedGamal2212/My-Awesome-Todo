@@ -3,7 +3,7 @@ import TaskCard from '../TaskCard/TaskCard';
 
 const RegularItemsList = ({ items }) => {
     return (
-        <div className='is-flex is-flex-wrap-wrap p-2 is-justify-content-center'>
+        <div className='is-flex is-flex-wrap-wrap p-4 is-justify-content-center'>
             {items.map((item, idx) => {
                 return (
                     <TaskCard

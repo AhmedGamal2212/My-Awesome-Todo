@@ -1,3 +1,13 @@
+.icon {
+    transition-duration: 0.3s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: hsl(142, 52%, 96%);
+}
+
 @media (min-width: 900px) {
     .card {
         max-width: 48% !important;
