@@ -8,15 +8,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import style from './TaskCard.module.css';
 
-const TaskCard = ({ task }) => {
-    const { title, description, priority, dueDate, status } = task;
+const TaskCard = ({
+    task: { title, description, priority, dueDate, status },
+}) => {
     return (
-        <div className={`card m-1 has-background-white-ter has-text-white p-1 ${style.card}`}>
+        <div
+            className={`card m-1 has-background-white-ter has-text-white p-1 ${style.card}`}
+        >
             <div className='card-content'>
                 <div className='media'>
                     <div className='media-content'>
                         <p className='title is-3'>{title}</p>
-                        <div className='is-flex'>
+                        <div className='is-flex is-align-items-baseline'>
                             <div
                                 className={`tag mr-4 ${
                                     priority === 'H'
@@ -32,36 +35,33 @@ const TaskCard = ({ task }) => {
                         </div>
                     </div>
                 </div>
-                <div className='content is-size-6 has-text-grey-dark'>{description}</div>
+                <div className='content is-size-6 has-text-grey-dark'>
+                    {description}
+                </div>
             </div>
             <div className='card-footer has-background-black-ter'>
-                <div className={`card-footer-item`}>
+                <div className={`card-footer-item ${style.icon}`}>
                     <span
                         className={`icon ${status ? 'has-text-success' : ''}`}
                     >
-                        {status ? (
-                            <FontAwesomeIcon
-                                icon={faCheckDouble}
-                                data-testid='task-done-icon'
-                            />
-                        ) : (
-                            <FontAwesomeIcon
-                                icon={faClipboardList}
-                                data-testid='pending-icon'
-                            />
-                        )}
+                        <FontAwesomeIcon
+                            icon={status ? faCheckDouble : faClipboardList}
+                            data-testid={
+                                status ? 'task-done-icon' : 'pending-icon'
+                            }
+                        />
                     </span>
                 </div>
-                <div className='card-footer-item'>
-                    <span className='icon'>
+                <div className={`card-footer-item ${style.icon}`}>
+                    <span className={`icon`}>
                         <FontAwesomeIcon
                             icon={faPen}
                             data-testid='edit-icon'
                         />
                     </span>
                 </div>
-                <div className='card-footer-item'>
-                    <span className='icon'>
+                <div className={`card-footer-item ${style.icon}`}>
+                    <span className={`icon`}>
                         <FontAwesomeIcon
                             icon={faTrash}
                             data-testid='delete-icon'

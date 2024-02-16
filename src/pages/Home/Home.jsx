@@ -15,13 +15,8 @@ const Home = () => {
         <div className='is-fh' style={{position: 'relative'}}>
             <QuoteContainer useQuote={useRandomInspirationalQuote} />
             <AddTaskForm />
-            <SplitScreen
-                leftWeight={leftPaneWidthInRatio}
-                rightWeight={rightPaneWidthInRatio}
-            >
-                <RegularItemsListContainer useItemsData={useTasksContext} />
-                <TaskFilters />
-            </SplitScreen>
+            <TaskFilters />
+            <RegularItemsListContainer useItemsData={useTasksContext} />
         </div>
     );
 };

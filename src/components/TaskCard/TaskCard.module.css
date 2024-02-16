@@ -1,5 +1,21 @@
-@media (min-width: 900px) {
+.icon {
+    transition-duration: 0.3s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: hsl(142, 52%, 60%);
+}
+
+@media screen and (min-width: 650px) {
     .card {
-        max-width: 48% !important;
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        width: 32% !important;
     }
 }

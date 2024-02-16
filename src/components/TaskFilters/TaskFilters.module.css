@@ -1,3 +1,7 @@
-.buttonsContainer {
-    padding: 1rem 2rem;
+.filtersContainer {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
