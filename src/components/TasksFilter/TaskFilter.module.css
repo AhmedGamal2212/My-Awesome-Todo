@@ -1,0 +1,8 @@
+.btn {
+    min-width: fit-content;
+}
+
+.isActive {
+    background-color: hsl(142, 52%, 90%) !important;
+    color: rgba(0, 0, 0, 80%) !important;
+}

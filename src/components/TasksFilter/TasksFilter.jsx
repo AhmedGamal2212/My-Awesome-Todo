@@ -1,18 +1,15 @@
 import React from 'react';
-import style from './FilterButton.module.css'
+import style from './TaskFilter.module.css';
 
-<<<<<<< HEAD:src/components/TasksFilter/TasksFilter.jsx
-const TasksFilter = ({text, action}) => {
-=======
-const FilterButton = ({ text, action }) => {
->>>>>>> parent of 26d642f (reformat project files using jetbrains editor):src/components/FilterButton/FilterButton.jsx
+const TasksFilter = ({ text, action, selected }) => {
     return (
-        <button
-            className={`button is-success is-fullwidth has-text-weight-bold is-inverted is-outlined has-background-black-bis ${style.btn}`}
+        <a
+            href='#'
+            className={`dropdown-item has-text-centered has-text-weight-bold ${selected === text ? `is-active ${style.isActive}` : ''}`}
             onClick={action}
         >
             {text}
-        </button>
+        </a>
     );
 };
 
