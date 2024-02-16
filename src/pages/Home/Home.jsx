@@ -6,6 +6,7 @@ import SplitScreen from '../../components/SplitScreen';
 import { useTasksContext } from '../../context/TasksContext';
 import RegularItemsListContainer from '../../components/RegularItemsList';
 import TaskFilters from '../../components/TaskFilters';
+import Footer from '../../components/Footer';
 
 const Home = () => {
     const leftPaneWidthInRatio = 3;
@@ -21,6 +22,7 @@ const Home = () => {
                 <RegularItemsListContainer useItemsData={useTasksContext} />
                 <TaskFilters />
             </SplitScreen>
+            <Footer />
         </div>
     );
 };
