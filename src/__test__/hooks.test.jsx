@@ -1,6 +1,6 @@
-import {render, screen} from '@testing-library/react';
-import {describe, expect, it} from 'vitest';
-import {useRandomInspirationalQuote} from '../hooks/useRandomInspirationalQuote.js';
+import { screen, render } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
+import { useRandomInspirationalQuote } from '../hooks/useRandomInspirationalQuote.js';
 
 const MockComponent = () => {
     const quote = useRandomInspirationalQuote();
@@ -15,7 +15,7 @@ const MockComponent = () => {
 describe('useRandomInspirationalQuote hook', () => {
     beforeAll(() => {
         render(
-            <MockComponent/>
+            <MockComponent />
         )
     })
 

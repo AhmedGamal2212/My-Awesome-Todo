@@ -1,9 +1,9 @@
-import React, {createContext, useContext} from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import useTasksList from '../hooks/useTasksList';
 
 const TasksContext = createContext(undefined);
 
-const TasksContextProvider = ({children}) => {
+const TasksContextProvider = ({ children }) => {
     const tasksList = useTasksList();
 
     return (
@@ -19,7 +19,7 @@ const TasksContextProvider = ({children}) => {
 
 const useTasksContext = () => {
     const context = useContext(TasksContext);
-    if (context === undefined) {
+    if(context === undefined) {
         throw new Error('wrong provider wrapping!');
     }
     return context;

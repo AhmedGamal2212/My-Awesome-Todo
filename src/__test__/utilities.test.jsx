@@ -1,5 +1,5 @@
-import {describe, expect, it} from 'vitest';
-import {secondsToMilliseconds} from '../utilities';
+import { describe, it, expect } from 'vitest';
+import { secondsToMilliseconds } from '../utilities';
 
 describe('secondsToMilliseconds function', () => {
     it('should should return the number of seconds multiplied by 1000', () => {

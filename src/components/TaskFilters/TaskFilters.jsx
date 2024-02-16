@@ -1,7 +1,13 @@
 import React from 'react';
+<<<<<<< HEAD
 import TasksFilter from '../TasksFilter';
 import { FILTERS_ACTIONS, FILTERS_TEXT } from '../../constants';
 import style from './TaskFilters.module.css';
+=======
+import FilterButton from '../FilterButton';
+import { FILTERS_TEXT, FILTERS_ACTIONS } from '../../constants';
+import style from './TaskFilters.module.css'
+>>>>>>> parent of 26d642f (reformat project files using jetbrains editor)
 
 const TaskFilters = () => {
     const buttonsList = [];

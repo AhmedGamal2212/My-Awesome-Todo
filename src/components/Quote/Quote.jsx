@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Quote.module.css'
 
-const Quote = ({quoteDetails}) => {
-    const {quote, author} = quoteDetails;
+const Quote = ({ quoteDetails }) => {
+    const { quote, author } = quoteDetails;
     return (
         <div className={`container mt-4 p-4 is-fluid` + ` ${styles.mainContainer}`}>
             <div className='has-text-white has-text-weight-bold has-text-centered'>

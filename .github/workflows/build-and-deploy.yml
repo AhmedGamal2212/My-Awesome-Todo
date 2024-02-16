@@ -1,44 +1,44 @@
 name: Deploy to GitHub Pages
-
+ 
 on:
   push:
     branches:
       - master
-
+      
 permissions:
   contents: write
   id-token: write
-
+  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
           node-version: '20.x'
 
-      - name: Configure Git
-        run: |
-          git config --global user.name "ahmedgamal2212"
-          git config --global user.email "ahmedgemy2212@gmail.com"
-          git config --global credential.helper store
-          git config --global user.password "${{ secrets.PAGES_DEPLOYMENT_TOKEN  }}"
+    - name: Configure Git
+      run: |
+        git config --global user.name "ahmedgamal2212"
+        git config --global user.email "ahmedgemy2212@gmail.com"
+        git config --global credential.helper store
+        git config --global user.password "${{ secrets.PAGES_DEPLOYMENT_TOKEN  }}"
 
-      - name: Install dependencies
-        run: |
-          npm i
+    - name: Install dependencies
+      run: |
+        npm i
+      
+    - name: Build
+      run: |
+        npm run build
 
-      - name: Build
-        run: |
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: dist # The folder the action should deploy.
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: dist # The folder the action should deploy.

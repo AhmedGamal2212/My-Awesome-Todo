@@ -1,5 +1,5 @@
 import React from 'react';
-import {Field, Form, Formik} from 'formik';
+import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 
 const initialValues = {
@@ -24,8 +24,7 @@ const AddTaskForm = () => {
             validateOnBlur
         >
             <Form className='columns'>
-                <div
-                    className='box control column is-half is-offset-one-quarter has-background-black is-flex is-justify-content-center is-align-items-center has-text-white is-three-fifths-mobile is-offset-one-fifth-mobile'>
+                <div className='box control column is-half is-offset-one-quarter has-background-black is-flex is-justify-content-center is-align-items-center has-text-white is-three-fifths-mobile is-offset-one-fifth-mobile'>
                     <Field
                         type='text'
                         className='input'

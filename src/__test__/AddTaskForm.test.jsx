@@ -1,11 +1,11 @@
 import React from 'react';
-import {fireEvent, render, screen, waitFor} from '@testing-library/react';
-import {describe, expect, it} from 'vitest';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 import AddTaskForm from '../components/AddTaskForm';
 
 describe('AddTaskForm Component', () => {
     it('should render the component', () => {
-        render(<AddTaskForm/>);
+        render(<AddTaskForm />);
         expect(
             screen.getByPlaceholderText('Add a new task...')
         ).toBeInTheDocument();
@@ -13,11 +13,11 @@ describe('AddTaskForm Component', () => {
     });
 
     it('should submit a valid task title', async () => {
-        render(<AddTaskForm/>);
+        render(<AddTaskForm />);
         const input = screen.getByPlaceholderText('Add a new task...');
         const button = screen.getByText('+');
         console.log = vi.fn();
-        fireEvent.change(input, {target: {value: 'Do homework'}});
+        fireEvent.change(input, { target: { value: 'Do homework' } });
         fireEvent.click(button);
         await waitFor(() => {
             expect(console.log).toHaveBeenCalledWith({
@@ -28,7 +28,7 @@ describe('AddTaskForm Component', () => {
     });
 
     it('should submit an empty task title', () => {
-        render(<AddTaskForm/>);
+        render(<AddTaskForm />);
         const button = screen.getByText('+');
 
         console.log = vi.fn();

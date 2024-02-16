@@ -1,15 +1,15 @@
-import {render, screen} from '@testing-library/react';
-import {describe, expect, it} from 'vitest';
+import { screen, render } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
 import Navbar from '../components/Navbar';
-import {StaticRouter} from 'react-router-dom/server';
-import {APP_TITLE} from '../constants';
+import { StaticRouter } from 'react-router-dom/server';
+import { APP_TITLE } from '../constants';
 
 describe('Navbar Component', () => {
     beforeEach(() => {
         render(
             <>
                 <StaticRouter location={`/tasks`}>
-                    <Navbar/>
+                    <Navbar />
                 </StaticRouter>
             </>
         );
