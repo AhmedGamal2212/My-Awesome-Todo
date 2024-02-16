@@ -12,7 +12,7 @@ const Home = () => {
     const leftPaneWidthInRatio = 3;
     const rightPaneWidthInRatio = 1;
     return (
-        <div className='is-fh'>
+        <div className='is-fh' style={{position: 'relative'}}>
             <QuoteContainer useQuote={useRandomInspirationalQuote} />
             <AddTaskForm />
             <SplitScreen
@@ -22,7 +22,6 @@ const Home = () => {
                 <RegularItemsListContainer useItemsData={useTasksContext} />
                 <TaskFilters />
             </SplitScreen>
-            <Footer />
         </div>
     );
 };

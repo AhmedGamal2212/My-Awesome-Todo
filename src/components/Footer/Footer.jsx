@@ -1,10 +1,11 @@
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import style from './Footer.module.css'
 
 const Footer = () => {
     return (
-        <footer className='p-5 has-background-black'>
+        <footer className={`p-5 has-background-black ${style.footer}`}>
             <div className='content has-text-centered'>
                 <p className='title'>
                     <span className='has-text-success'>M</span>

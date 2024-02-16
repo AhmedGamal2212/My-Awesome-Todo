@@ -4,11 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Landing = () => {
     return (
-        // dummy buttons
-        <div className='buttons' style={{
-            marginTop: '10%',
-            marginLeft: '20%'
-        }}>
+        <div className='buttons'>
             <Link
                 className='button is-primary'
                 to={`./tasks`}
