@@ -1,14 +1,14 @@
 import React from 'react';
 import {fireEvent, render, screen} from '@testing-library/react';
 import {describe, expect, it} from 'vitest';
-import FilterButton from '../components/FilterButton';
+import TasksFilter from '../components/TasksFilter';
 
-describe('FilterButton component', () => {
+describe('TasksFilter component', () => {
     it('renders correctly with given props', () => {
         const text = 'Filter';
         const action = vi.fn();
         render(
-            <FilterButton
+            <TasksFilter
                 text={text}
                 action={action}
             />
@@ -21,7 +21,7 @@ describe('FilterButton component', () => {
         const text = 'Filter';
         const action = vi.fn();
         render(
-            <FilterButton
+            <TasksFilter
                 text={text}
                 action={action}
             />
