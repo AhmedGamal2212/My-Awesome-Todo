@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
-import { BASE_URL } from './constants';
+import {BASE_URL} from './constants';
 import RootLayout from './layouts/RootLayout';
 import SingleTask from './pages/SingleTask';
 import Landing from './pages/Landing';
@@ -14,20 +14,20 @@ function App() {
             <Routes>
                 <Route
                     path={`${BASE_URL}/`}
-                    element={<RootLayout />}
+                    element={<RootLayout/>}
                 >
                     <Route
                         path=''
-                        element={<Landing />}
+                        element={<Landing/>}
                     />
                     <Route path={`tasks`}>
                         <Route
                             path=''
-                            element={<Home />}
+                            element={<Home/>}
                         />
                         <Route
                             path=':id'
-                            element={<SingleTask />}
+                            element={<SingleTask/>}
                         />
                     </Route>
                 </Route>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { render, fireEvent, screen } from '@testing-library/react';
-import { expect, describe, it } from 'vitest';
+import {fireEvent, render, screen} from '@testing-library/react';
+import {describe, expect, it} from 'vitest';
 import FilterButton from '../components/FilterButton';
 
 describe('FilterButton component', () => {

@@ -1,6 +1,5 @@
 import React from 'react';
-import { BASE_URL } from '../../constants';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Landing = () => {
     return (

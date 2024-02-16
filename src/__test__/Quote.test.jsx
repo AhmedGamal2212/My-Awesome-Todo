@@ -1,16 +1,13 @@
-import { screen, render, waitFor, configure } from '@testing-library/react';
-import { describe, it, expect } from 'vitest';
-import { useRandomInspirationalQuote } from '../hooks/useRandomInspirationalQuote';
+import {render, screen, waitFor} from '@testing-library/react';
+import {describe, expect, it} from 'vitest';
+import {useRandomInspirationalQuote} from '../hooks/useRandomInspirationalQuote';
 import QuoteContainer from '../components/Quote';
-import {
-    INITIAL_INSPIRATIONAL_QUOTE,
-    QUOTES_VIEW_TIME_IN_SECONDS,
-} from '../constants';
-import { secondsToMilliseconds } from '../utilities';
+import {INITIAL_INSPIRATIONAL_QUOTE, QUOTES_VIEW_TIME_IN_SECONDS,} from '../constants';
+import {secondsToMilliseconds} from '../utilities';
 
 describe('Quote Component', () => {
     beforeEach(() => {
-        render(<QuoteContainer useQuote={useRandomInspirationalQuote} />);
+        render(<QuoteContainer useQuote={useRandomInspirationalQuote}/>);
     });
 
     it('should render the initial quote value first being rendered', () => {
@@ -49,6 +46,6 @@ describe('Quote Component', () => {
                 }
             );
         },
-        { timeout: secondsToMilliseconds(QUOTES_VIEW_TIME_IN_SECONDS + 2) }
+        {timeout: secondsToMilliseconds(QUOTES_VIEW_TIME_IN_SECONDS + 2)}
     );
 });

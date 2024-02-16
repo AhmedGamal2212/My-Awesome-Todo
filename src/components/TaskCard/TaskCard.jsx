@@ -1,15 +1,10 @@
-import {
-    faClipboardList,
-    faCheckDouble,
-    faPen,
-    faTrash,
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCheckDouble, faClipboardList, faPen, faTrash,} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import React from 'react';
 import style from './TaskCard.module.css';
 
-const TaskCard = ({ task }) => {
-    const { title, description, priority, dueDate, status } = task;
+const TaskCard = ({task}) => {
+    const {title, description, priority, dueDate, status} = task;
     return (
         <div
             className={`card m-1 has-background-white-ter has-text-white p-1 ${style.card}`}

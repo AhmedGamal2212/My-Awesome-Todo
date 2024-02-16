@@ -1,13 +1,13 @@
-import { screen, render } from '@testing-library/react';
-import { beforeAll, describe, it, expect } from 'vitest';
+import {render, screen} from '@testing-library/react';
+import {beforeAll, describe, expect, it} from 'vitest';
 import App from '../App'
-import { BrowserRouter } from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
 describe('App Component', () => {
     beforeAll(() => {
         render(
             <BrowserRouter>
-                <App />
+                <App/>
             </BrowserRouter>
         );
     });

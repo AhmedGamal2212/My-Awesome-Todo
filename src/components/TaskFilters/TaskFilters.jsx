@@ -1,6 +1,6 @@
 import React from 'react';
 import FilterButton from '../FilterButton';
-import { FILTERS_TEXT, FILTERS_ACTIONS } from '../../constants';
+import {FILTERS_ACTIONS, FILTERS_TEXT} from '../../constants';
 import style from './TaskFilters.module.css'
 
 const TaskFilters = () => {

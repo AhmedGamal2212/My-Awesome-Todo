@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { BASE_URL, APP_TITLE } from '../../constants';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import {Link} from 'react-router-dom';
+import {APP_TITLE} from '../../constants';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCircleCheck} from '@fortawesome/free-regular-svg-icons';
 
 const Navbar = () => {
     return (

@@ -1,8 +1,8 @@
 // Import the required modules
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import TaskCard from '../components/TaskCard';
-import { describe, it, expect } from 'vitest';
+import {describe, expect, it} from 'vitest';
 
 describe('TaskCard', () => {
     const mockTask = {
@@ -14,7 +14,7 @@ describe('TaskCard', () => {
     };
 
     it('renders the component with the mock task', () => {
-        render(<TaskCard task={mockTask} />);
+        render(<TaskCard task={mockTask}/>);
         expect(screen.getByText(mockTask.title)).toBeInTheDocument();
         expect(screen.getByText(mockTask.description)).toBeInTheDocument();
         expect(screen.getByText('Low')).toBeInTheDocument();
