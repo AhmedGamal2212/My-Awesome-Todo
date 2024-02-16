@@ -5,7 +5,7 @@
 .icon:hover {
     cursor: pointer;
     transform: scale(1.1);
-    color: hsl(142, 52%, 96%);
+    color: hsl(142, 52%, 60%);
 }
 
 @media screen and (min-width: 650px) {
