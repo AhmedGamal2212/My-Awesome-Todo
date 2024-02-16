@@ -55,6 +55,7 @@ const TaskFilters = () => {
                     id='dropdown-menu'
                     role='menu'
                     style={{ display: visible ? 'block' : 'none' }}
+                    data-testid="dropdown-menu"
                 >
                     <div className='dropdown-content'>{tasksFilters}</div>
                 </div>
